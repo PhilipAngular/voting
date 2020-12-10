@@ -1,0 +1,7 @@
+node_modules
+
+src/backend/node_modules
+src/backend/build
+src/backend/.env
+src/backend/tmp
+src/backend/.vscode

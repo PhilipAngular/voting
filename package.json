@@ -1,0 +1,41 @@
+{
+  "name": "voting",
+  "version": "1.0.0",
+  "description": "App voting in react and adonisjs",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilipAngular/voting.git"
+  },
+  "keywords": [
+    "reat",
+    "adonisjs",
+    "sass",
+    "my",
+    "first",
+    "app"
+  ],
+  "author": "PhilipAngular",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhilipAngular/voting/issues"
+  },
+  "homepage": "https://github.com/PhilipAngular/voting#readme",
+  "dependencies": {
+    "commitizen": "^4.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./config/cz"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "tsdocstandard": "^16.1.0",
+    "typescript": "4.2.0-dev.20201122"
+  }
+}
