@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <!-- SCRIPTS EXTERNOS -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <!-- SCRIPTS INTERNOS -->
+    <script src="../js/shared/consts.js"></script>
+    <script src="../js/shared/services.js" async></script>
+    <script src="../js/shared/global.js" async></script>
+    <script src="../js/voting.js" async></script>
+    <!-- <script src="../js/modules/const.mjs"></script> -->
+
+    <!-- STYLES EXTERNOS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- STYLES INTERNOS -->
+    <link rel="stylesheet" type="text/css" href="../css/voting.css" />
+</head>
+
+<body onload="initialize();">
+    <div class="divabsolute">
+        <div class="loader"></div>
+    </div>
+    <div class="tooltip">
+        <div class="loader"></div>
+    </div>
+    <div class="tooltip"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="filter-g col-xl-3 col-lg-4 col-md-4 d-none d-md-block">
+                <p class="title-f-g font-weight-bold">Filtro</p>
+                <select id="partido-g" class="fields-f-g">
+                    <option value="">--Partido--</option>
+                </select>
+                <select id="estado-g" class="fields-f-g">
+                    <option value="">--Estado--</option>
+                </select>
+                <button type="button" class="btn btn-dark btn-f-g" onclick="checkVotes(true)">Conferir Votos</button>
+            </div>
+            <div class="filter-p col-xl-3 col-lg-4 col-md-4 d-md-none d-flex align-items-center">
+                <div class="p-2 size-p">
+                    <p class="title-f-p font-weight-bold">Filtro</p>
+                </div>
+                <div class="p-2 size-g">
+                    <select id="partido-p" class="fields-f-p">
+                        <option value="">--Partido--</option>
+                    </select>
+                </div>
+                <div class="p-2 size-g">
+                    <select id="estado-p" class="fields-f-p">
+                        <option value="">--Estado--</option>
+                    </select>
+                </div>
+                <div class="p-2 size-p">
+                    <button type="button" class="btn btn-dark btn-sm" onclick="checkVotes(false)"><i
+                            class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="map-part col">
+                <div class="map"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
