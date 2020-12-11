@@ -65,7 +65,7 @@ Neste tópico eu procuro apresentar aquilo que entendi relevante para os critér
   |[ ] Meio a Meio||
   |[ ] Não fez nada esperado||
 
-### Assertividade
+### Assertividade 
 
 - **Parte do desenvolvedor:** Entendo ter entregue todas as funcionalidades solicitadas, mas com certeza tem muitas coisas para melhorar. E pensando nisso que coloco aqui uma possível lista de melhoria:
   1. Permitir ao usuário fazer zoom com o scroll do mouse;
